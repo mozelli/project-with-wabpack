@@ -25,3 +25,15 @@ Para fazer o build do projeto e continuar observando os resultados das alteraç�
 Para fazer o build do projeto, continuar observando os resultados das alterações no código e subir o serviço para um servidor local, basta executar o seguinte código:
 
 `npm run serve`
+
+O serviço estará rodando em `localhost:9000`, mas se quiser alterar, modifique o arquivo `webpack.config.js`:
+
+```
+module.exports {
+    ///
+    devServer: { 
+        ///
+        port: 9000,
+    }
+}
+```
